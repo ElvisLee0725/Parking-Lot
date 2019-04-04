@@ -8,7 +8,7 @@ public class Main {
         ParkingLot p = new ParkingLot(2, 1, 1);
         Compact car1 = new Compact();
         Truck car2 = new Truck();
-        Truck car3 = new Truck();
+        Compact car3 = new Compact();
         Sedan car4 = new Sedan();
         Compact car5 = new Compact();
         Compact car6 = new Compact();
@@ -20,5 +20,6 @@ public class Main {
 
         p.carLeaves(car1);
         p.park(car4);
+        p.park(car3);
     }
 }

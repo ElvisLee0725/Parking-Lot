@@ -3,10 +3,8 @@ import java.util.List;
 
 public class Floor {
     List<ParkingSpot> spots = new ArrayList<ParkingSpot>();
-    private int smallSpotsLeft;
 
     public Floor(int floorNum, int smallSpots, int largeSpots) {
-        this.smallSpotsLeft = smallSpots;
         int totalSpots = smallSpots + largeSpots;
         for(int i = 0; i < totalSpots; i++) {
             if(i < smallSpots) {
